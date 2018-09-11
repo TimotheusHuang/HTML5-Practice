@@ -51,10 +51,12 @@
     }
  
      
- 
+
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
+
+    echo $email_message;
 
     // create email headers
     $headers = 'From: '.$email_from."\r\n".
