@@ -56,7 +56,7 @@
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Message: ".clean_string($message)."\n";
 
-    echo $email_message;
+    die($email_message);
 
     // create email headers
     $headers = 'From: '.$email_from."\r\n".
