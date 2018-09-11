@@ -62,7 +62,7 @@
     'X-Mailer: PHP/' . phpversion();
 //    @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
-    <script>
+    <script type="text/javascript">
         var name = '<?php echo $name ?>';
         var email_to = '<?php echo $email_to ?>';
         var email_message = '<?php echo $email_message ?>';
