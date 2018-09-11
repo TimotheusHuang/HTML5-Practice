@@ -304,7 +304,7 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form method="post" action="email.php">
+							<form method="post" action="#" >
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -334,8 +334,8 @@
 								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://www.linkedin.com/in/tim-shang-hao-huang-9aa3a89a/" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="huangtim30@hotmail.com.tw" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
@@ -343,7 +343,29 @@
 
 			</div>
 
-		<!-- Scripts -->
+            
+        <div id="ytplayer"></div>
+        
+        <script>
+          // Load the IFrame Player API code asynchronously.
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/player_api";
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+          // Replace the 'ytplayer' element with an <iframe> and
+          // YouTube player after the API code downloads.
+          var player;
+          function onYouTubePlayerAPIReady() {
+            player = new YT.Player('ytplayer', {
+              height: '720',
+              width: '1280',
+              videoId: 'M7lc1UVf-VE'
+            });
+          }
+        </script>
+		
+        <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
