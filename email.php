@@ -68,7 +68,8 @@
         var email_message = '<?php echo $email_message ?>';
         var email_sub = '<?php echo $email_subject ?>';
         var email_str = 'mailto:' + email_to + '?subject=' + email_sub + '&body=' + email_message;
-        window.open(String(email_str).replace('^', '@'));
+        window.alert(String(email_str);
+        //window.open(String(email_str).replace('^', '@'));
     </script>
 <?php
    // header("Location:index.html");
