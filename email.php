@@ -72,7 +72,7 @@
         //window.open(String(email_str).replace('^', '@'));
     </script>
 <?php
-   // header("Location:index.html");
+    header("Location:index.html");
     }
 ?>
 
