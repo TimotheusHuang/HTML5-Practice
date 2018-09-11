@@ -2,7 +2,6 @@
     if(isset($_POST['email'])){
         $email_to = "huangtim30@hotmail.com.tw";
         $email_subject = "Project HTML5 Practice";
-    }
 
     function died($error) {
         // your error code can go here
@@ -62,4 +61,9 @@
     'Reply-To: '.$email_from."\r\n" .
     'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);  
+    }
 ?>
+
+<html>
+
+</html>
