@@ -71,8 +71,7 @@
         window.open(String(email_str).replace('^', '@'));
     </script>
 <?php
-    }
-    echo  
     header("Location:index.html");
+    }
 ?>
 
