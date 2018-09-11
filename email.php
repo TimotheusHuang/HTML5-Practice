@@ -64,18 +64,15 @@
 ?>
     <script>
         var name = '<?php echo $name ?>';
-        var email = '<?php echo $email ?>';
+        var email_to = '<?php echo $email_to ?>';
         var email_message = '<?php echo $email_message ?>';
         var email_sub = '<?php echo $email_subject ?>';
-        var email_str = 'mailto:' + email + '?subject=' + email_sub + '&body=' + email_message;
-        window.open(String(email_str).replace('^', '@') );
+        var email_str = 'mailto:' + email_to + '?subject=' + email_sub + '&body=' + email_message;
+        window.open(String(email_str).replace('^', '@'));
     </script>
 <?php
     }
-   
+    echo  
     header("Location:index.html");
 ?>
 
-<html>
-
-</html>

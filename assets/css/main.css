@@ -61,7 +61,6 @@ mark {
 }
 iframe {
     vertical-align: middle;
-    horizontal-align: middle;
 }
 input::-moz-focus-inner {
 	border: 0;
